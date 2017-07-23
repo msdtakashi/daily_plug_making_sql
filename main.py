@@ -1,8 +1,10 @@
+import datetime
+from datetime import datetime as dt
 
 tstr = '2016-07-21'
 tdatetime = dt.strptime(tstr, '%Y-%m-%d')
 for i in range(11):
-    dd = tdatetime + datetime.timedelta(days=i)
+    dd = tdatetime + datetime.timedelta(days=i)s
     print("""
     select 
         uid
